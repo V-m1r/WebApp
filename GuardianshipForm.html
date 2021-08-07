@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fill out the form</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="assets/fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="main">
+
+    <!-- Sign up form -->
+    <section class="signup">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-form">
+                    <h2 class="form-title">Fill out the form</h2>
+                    <form method="POST" class="register-form" id="register-form">
+                        <div class="form-group">
+                            <label for="numberc"><i class="zmdi zmdi-assignment"></i></label>
+                            <input type="text" name="numberc" id="numberc" placeholder="Med certificate Num(ex:AB12345)*"/>
+                        </div>
+                        <div class = "form-group">
+                            <label for="dateCert"><i class="zmdi zmdi-view-day"></i> </label>
+                            <input name="date" id = "dateCert" type="text" placeholder="Issuance date of the certificate*" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'"/>
+                        </div>
+                        <div class="form-group">
+                        <label for="hosp"><i class="zmdi zmdi-hospital"></i></label>
+                        <input type="text" name="hosp" id="hosp" placeholder="Enter the name of the hospital*"/>
+                    </div>
+                        <div class="form-group">
+                            <label for="numberj"><i class="zmdi zmdi-assignment-o"></i></label>
+                            <input type="text" name="numberj" id="numberj" placeholder="Jury's decision Num(ex:ABC1234)*"/>
+                        </div>
+                        <div class = "form-group">
+                            <label for="dateDec"><i class="zmdi zmdi-view-day"></i> </label>
+                            <input name="date" id = "dateDec" type="text" placeholder="Issuance date of the decision*" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="inst"><i class="zmdi zmdi-hospital"></i></label>
+                            <input type="text" name="inst" id="inst" placeholder="Enter the name of the institution*"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="childname"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input type="text" name="childname" id="childname" placeholder="Full Name of the child*"/>
+                        </div>
+
+                        <div class = "form-group">
+                            <label for="dateBirth"><i class="zmdi zmdi-view-day"></i> </label>
+                            <input name="date" id = "dateBirth" type="text" placeholder="Date of birth of the child*" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'"/>
+                        </div>
+
+                        <div>
+                            <h5>Gender of the child*</h5>
+                            <div class="form-group">
+                                <input type="radio" name="radioButton" id ="rButton" >
+                                <label for="rButton" >Male</label>
+
+                            </div>
+                            <div class="form-group">
+                                <input type="radio" name="radioButton" id = "rB">
+                                <label for="rB">Female</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                        <label for="parname"><i class="zmdi zmdi-account material-icons-name"></i></label>
+
+                        <input type="text" name="parname" id="parname" placeholder="Parent Name(if known)"/>
+                    </div>
+                        <p>*<span style="color: #FF0000; "> required fields</span></p>
+
+                        <div class="form-group form-button">
+                            <input type="submit" name="signup" id="signup" class="form-submit" value="Submit"/>
+                        </div>
+                    </form>
+                </div>
+                <div class="signup-image">
+                    <figure><img src="assets/images/sigin-image.png" alt="sing up image"></figure>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- JS -->
+    <script src="assets/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</div></body>
+</html>
